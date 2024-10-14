@@ -19,8 +19,8 @@ public class PollService {
     private EntityManager entityManager;
 
     // Save a new poll
-    public void savePoll(Poll poll) {
-        pollRepository.save(poll);
+    public void saveAllPolls(List<Poll> polls) {
+        pollRepository.saveAll(polls);
     }
 
     // Fetch all polls
